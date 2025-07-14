@@ -538,59 +538,207 @@
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const text = await response.text();
                 
-                let htmlContent = '';
-                const sections = text.split('\n\n');
-                let currentSection = '';
-                let publicationCount = 0;
+                let htmlContent = `<p class="intro-text">My research contributions span diverse aspects of plant breeding, genetics, and crop improvement, with 11 publications in peer-reviewed international journals, technical bulletins, and conference proceedings. My published work primarily focuses on genetic analysis, breeding methodologies, and crop improvement in maize and tomato.</p>`;
                 
-                for (let section of sections) {
-                    section = section.trim();
-                    if (!section) continue;
-                    
-                    if (section.includes('INTRODUCTION TEXT:')) {
-                        const introText = sections.find(s => s.includes('My research contributions'));
-                        if (introText) {
-                            htmlContent += `<p class="intro-text">${introText.replace('INTRODUCTION TEXT:', '').trim()}</p>`;
-                        }
-                        continue;
+                htmlContent += '<h3>Peer-Reviewed Publications</h3>';
+                
+                // Parse publications
+                const publications = [
+                    {
+                        title: "Grafting technology to alleviate waterlogging stress in tomato",
+                        authors: "Anant Bahadur, P.M. Singh, Nagendra Rai, Major Singh, Achuit Kumar Singh, S.G. Karkute, Amit Kumar Singh, K.K. Jangid, Anish Kumar Singh, Sanchika Snehi, Mohd. A. Nadeem, P.K. Patel, V.K. Agrawal, Jagdish Singh",
+                        journal: "Technical Bulletin No. 88, ICAR-Indian Institute of Vegetable Research, Varanasi, pp. 1-40",
+                        year: "2019",
+                        url: "https://iivr.icar.gov.in/"
+                    },
+                    {
+                        title: "Elucidation of variability, interrelationships and path-coefficient in maize (Zea mays L.)",
+                        authors: "A. Chaudhary, K. Srivastava, V.K. Agrawal, S. Kumar",
+                        journal: "Nature Environment and Pollution Technology. 15(2): 653-656",
+                        year: "2016",
+                        url: "https://neptjournal.com/upload-images/NL-56-44-(44)B-3236.pdf"
+                    },
+                    {
+                        title: "Trait Association Studies for Yield Components in Tomato (Solanum lycopersicum L.)",
+                        authors: "B. Thapa, A.K. Pandey, V.K. Agrawal, N. Kumar, S.K. Mahto",
+                        journal: "International Journal of Agriculture Sciences. 8(1): 934-937",
+                        year: "2015",
+                        url: "http://www.bioinfopublication.org/viewhtml.php?artid=BIA0002639"
+                    },
+                    {
+                        title: "Inheritance of kernel quality attributes in quality protein maize (Zea mays L.)",
+                        authors: "V.K. Agrawal, R.M. Singh, J.P. Shahi, R.K. Agrawal, D.P. Chaudhary",
+                        journal: "Indian Journal of Genetics and Plant Breeding. 75(2): 201-207",
+                        year: "2015",
+                        url: "https://doi.org/10.5958/0975-6906.2015.00031.0"
+                    },
+                    {
+                        title: "Genetics of ear traits and grain yield in quality protein maize (Zea mays L.)",
+                        authors: "V.K. Agrawal, R.M. Singh, J.P. Shahi, R.K. Agrawal",
+                        journal: "Electronic Journal of Plant Breeding, 5(3): 428-434",
+                        year: "2014",
+                        url: "https://www.ejplantbreeding.org/index.php/EJPB/article/view/34"
+                    },
+                    {
+                        title: "Correlation and path analysis in certain inbred genotypes of maize (Zea mays L.) at Varanasi",
+                        authors: "V. Natraj, J.P. Shahi, V.K. Agrawal",
+                        journal: "International Journal of Innovative Research and Development. 3(1): 14-17",
+                        year: "2014",
+                        url: "https://internationaljournalcorner.com/index.php/ijird_ojs/article/view/134378/93502"
+                    },
+                    {
+                        title: "Heritable and non-heritable components of phenotypic correlation coefficient and path analysis in tomato (Solanum lycopersicum L.)",
+                        authors: "Mukul, V.K. Agrawal, K. Srivastava, R.K. Agrawal",
+                        journal: "The Bioscan. 9(4): 1789-1793",
+                        year: "2014",
+                        url: "https://thebioscan.com/index.php/pub/article/view/2139"
+                    },
+                    {
+                        title: "Estimation of genetic divergence among indigenous and exotic accessions of tomato (Solanum lycopersicum L.)",
+                        authors: "Mukul, K. Srivastava, V.K. Agrawal, R.K. Agrawal",
+                        journal: "Asian Journal of Bio Science. 9: 30-34",
+                        year: "2014",
+                        url: "http://www.researchjournal.co.in/upload/assignments/9_30-34.pdf"
+                    },
+                    {
+                        title: "Appraisal of genetic variability and seasonal interaction for yield and quality traits in maize (Zea mays L.)",
+                        authors: "D.M. Langade, J.P. Shahi, K. Srivastava, A. Singh, V.K. Agrawal, A. Sharma",
+                        journal: "Plant, Gene and Trait. 4(18): 95-103",
+                        year: "2013",
+                        url: "https://genbreedpublisher.com/index.php/pgt/article/view/956"
+                    },
+                    {
+                        title: "Maize as an emerging source of oil in India - An overview",
+                        authors: "D.M. Langade, J.P. Shahi, V.K. Agrawal, A. Sharma",
+                        journal: "Maydica, 58: 224-230",
+                        year: "2013",
+                        url: "https://core.ac.uk/download/pdf/230662278.pdf"
+                    },
+                    {
+                        title: "Doubled haploid in Maize Breeding: Analysis of Prospects and Constraints in Indian Context",
+                        authors: "J.P. Shahi, V.K. Agrawal, R.M. Singh",
+                        journal: "Book of Extended Summaries of the Eleventh Asian Maize Conference, Nanning, China, 7-11 November 2011. CIMMYT, Mexico, D.F., 198-200",
+                        year: "2011",
+                        url: "https://repository.cimmyt.org/entities/publication/17b4dc94-dfbf-495d-8507-868d9e9693b5"
                     }
+                ];
+                
+                publications.forEach((pub, index) => {
+                    htmlContent += `
+                        <div class="publication-item">
+                            <h4>${index + 1}. ${pub.title}</h4>
+                            <div class="authors">${pub.authors}</div>
+                            <div class="journal">${pub.journal} (${pub.year})</div>
+                            <div class="url"><a href="${pub.url}" target="_blank">View Publication</a></div>
+                        </div>
+                    `;
+                });
+                
+                // Add theses section
+                htmlContent += `
+                    <div class="thesis-section">
+                        <h3>Research Theses</h3>
+                        <div class="publication-item">
+                            <h4>PhD Thesis (2014)</h4>
+                            <div class="authors">Vishal Kumar Agrawal</div>
+                            <div class="journal">Banaras Hindu University, Varanasi, India</div>
+                            <div class="abstract"><strong>Title:</strong> Genetics of Yield and Quality Traits in Quality Protein Maize (Zea mays L.)</div>
+                        </div>
+                        <div class="publication-item">
+                            <h4>MSc Thesis (2008)</h4>
+                            <div class="authors">Vishal Kumar Agrawal</div>
+                            <div class="journal">Banaras Hindu University, Varanasi, India</div>
+                            <div class="abstract"><strong>Title:</strong> Studies on genetic variability, interrelationships and D-square analysis in French bean (Phaseolus vulgaris L.)</div>
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('publications-content').innerHTML = htmlContent;
+            } catch (error) {
+                console.error('Error loading publications:', error);
+                document.getElementById('publications-content').innerHTML = 
+                    `<p style="color: red;">Error loading publications. Please ensure publications_VishalAgrawal.txt is in the same directory.</p>`;
+            }
+        }
+
+        // Function to load and format contact content
+        async function loadContactContent() {
+            try {
+                const response = await fetch('contact_VishalAgrawal.txt');
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const text = await response.text();
+                
+                let htmlContent = `
+                    <p class="intro-text">Feel free to reach out for collaboration in plant breeding and agricultural research, or to discuss breeding innovations.</p>
                     
-                    if (section === 'PEER-REVIEWED PUBLICATIONS:') {
-                        htmlContent += '<h3>Peer-Reviewed Publications</h3>';
-                        currentSection = 'publications';
-                        continue;
-                    }
-                    
-                    if (section === 'RESEARCH THESES:') {
-                        htmlContent += '<div class="thesis-section"><h3>Research Theses</h3>';
-                        currentSection = 'theses';
-                        continue;
-                    }
-                    
-                    if (currentSection === 'publications' && section.includes('Title:')) {
-                        publicationCount++;
-                        const lines = section.split('\n');
-                        let title = '', authors = '', journal = '', year = '', abstract = '', url = '';
-                        
-                        for (let line of lines) {
-                            line = line.trim();
-                            if (line.startsWith('Title:')) title = line.replace('Title:', '').trim();
-                            else if (line.startsWith('Authors:')) authors = line.replace('Authors:', '').trim();
-                            else if (line.startsWith('Journal/Publication:')) journal = line.replace('Journal/Publication:', '').trim();
-                            else if (line.startsWith('Year:')) year = line.replace('Year:', '').trim();
-                            else if (line.startsWith('Abstract/Summary:')) abstract = line.replace('Abstract/Summary:', '').trim();
-                            else if (line.startsWith('URL:')) url = line.replace('URL:', '').trim();
-                        }
-                        
-                        htmlContent += `
-                            <div class="publication-item">
-                                <h4>${publicationCount}. ${title}</h4>
-                                <div class="authors">${authors}</div>
-                                <div class="journal">${journal} (${year})</div>
-                                ${abstract ? `<div class="abstract">${abstract}</div>` : ''}
-                                ${url ? `<div class="url"><a href="${url}" target="_blank">View Publication</a></div>` : ''}
+                    <div class="contact-section">
+                        <div class="contact-details">
+                            <h3>Contact Details</h3>
+                            <div class="contact-info">
+                                <p><strong>Email:</strong> <a href="mailto:dr.vishalkumar.agrawal@gmail.com">dr.vishalkumar.agrawal@gmail.com</a></p>
+                                <p><strong>Phone:</strong> <a href="tel:+919978939788">+91-9978939788</a> (Available on WhatsApp)</p>
+                                <p><strong>Location:</strong> Aurangabad, Maharashtra, India</p>
                             </div>
-                        `;
-                    }
-                    
-                    if (currentSection === 'theses' && (section.includes('PhD Thesis') || section.
+                        </div>
+                        
+                        <div class="professional-profiles">
+                            <h3>Professional Profiles</h3>
+                            <div class="contact-info">
+                                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vishal-kumar-agrawal-ph-d-9764001b" target="_blank">Connect with me</a></p>
+                                <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?hl=en&user=4T-8AgsAAAAJ" target="_blank">View Publications</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="opportunities">
+                            <h3>Available for Emerging Opportunities In</h3>
+                            <ul>
+                                <li>Plant Breeding & Genetics</li>
+                                <li>Agricultural Research & Development</li>
+                                <li>Hybrid Development Programs</li>
+                                <li>Global Breeding Initiatives</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="google-form-container">
+                            <h3>Send me a Message</h3>
+                            <p>Have questions or want to collaborate? Fill out the contact form below and I'll get back to you soon.</p>
+                            <a href="https://forms.gle/A1ps9zKZaqzkFe7U8" target="_blank" class="form-button">Open Contact Form</a>
+                            <p style="margin-top: 1rem; font-size: 0.9rem;">Email is the best way to reach me. I typically respond within 24 hours.<br>For urgent matters, please reach out via WhatsApp.</p>
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('contact-content').innerHTML = htmlContent;
+            } catch (error) {
+                console.error('Error loading contact content:', error);
+                document.getElementById('contact-content').innerHTML = 
+                    `<p style="color: red;">Error loading contact content. Please ensure contact_VishalAgrawal.txt is in the same directory.</p>`;
+            }
+        }
+
+        // Load all content when page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            loadHomeContent();
+            loadPublications();
+            loadContactContent();
+        });
+
+        // Tab switching function
+        function showTab(tabName) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
