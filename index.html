@@ -213,59 +213,92 @@
             text-align: center;
         }
         
-        .publication-item {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-left: 4px solid #4a8f4e;
-            border-radius: 4px;
-        }
-        
-        .publication-item h4 {
-            color: #2c5f2d;
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-        
-        .publication-item .authors {
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .publication-item .journal {
-            color: #357a38;
-            font-weight: 500;
-            margin-bottom: 0.5rem;
-        }
-        
-        .publication-item .abstract {
-            color: #555;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            margin-top: 0.5rem;
-        }
-        
-        .publication-item .url {
-            margin-top: 0.5rem;
-        }
-        
-        .publication-item .url a {
-            color: #2c5f2d;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        
-        .publication-item .url a:hover {
-            text-decoration: underline;
-        }
-        
-        .thesis-section {
-            background: #e8f5e8;
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
+    
+.publication-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #4a8f4e;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.publication-item h4 {
+    color: #2c5f2d;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.publication-item .authors {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+}
+
+.publication-item .journal {
+    color: #357a38;
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.publication-item .abstract {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+    text-align: justify;
+}
+
+.publication-item .url {
+    margin-top: 0.8rem;
+}
+
+.publication-item .url a {
+    color: #2c5f2d;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background-color: rgba(44, 95, 45, 0.1);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.publication-item .url a:hover {
+    background-color: rgba(44, 95, 45, 0.2);
+    text-decoration: none;
+}
+
+.thesis-section {
+    background: #e8f5e8;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.thesis-section .publication-item {
+    background: white;
+    border-left: 4px solid #2c5f2d;
+}
+
+/* Professional list styling */
+#publications-content {
+    text-align: left;
+}
+
+#publications-content h3 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+#publications-content .intro-text {
+    text-align: left;
+    margin-bottom: 2rem;
+}
         
         .resume-download {
             display: inline-block;
@@ -531,135 +564,86 @@
             }
         }
 
-        // Function to load and format publications
-        async function loadPublications() {
-            try {
-                const response = await fetch('publications_VishalAgrawal.txt');
-                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                const text = await response.text();
-                
-                let htmlContent = `<p class="intro-text">My research contributions span diverse aspects of plant breeding, genetics, and crop improvement, with 11 publications in peer-reviewed international journals, technical bulletins, and conference proceedings. My published work primarily focuses on genetic analysis, breeding methodologies, and crop improvement in maize and tomato.</p>`;
-                
-                htmlContent += '<h3>Peer-Reviewed Publications</h3>';
-                
-                // Parse publications
-                const publications = [
-                    {
-                        title: "Grafting technology to alleviate waterlogging stress in tomato",
-                        authors: "Anant Bahadur, P.M. Singh, Nagendra Rai, Major Singh, Achuit Kumar Singh, S.G. Karkute, Amit Kumar Singh, K.K. Jangid, Anish Kumar Singh, Sanchika Snehi, Mohd. A. Nadeem, P.K. Patel, V.K. Agrawal, Jagdish Singh",
-                        journal: "Technical Bulletin No. 88, ICAR-Indian Institute of Vegetable Research, Varanasi, pp. 1-40",
-                        year: "2019",
-                        url: "https://iivr.icar.gov.in/"
-                    },
-                    {
-                        title: "Elucidation of variability, interrelationships and path-coefficient in maize (Zea mays L.)",
-                        authors: "A. Chaudhary, K. Srivastava, V.K. Agrawal, S. Kumar",
-                        journal: "Nature Environment and Pollution Technology. 15(2): 653-656",
-                        year: "2016",
-                        url: "https://neptjournal.com/upload-images/NL-56-44-(44)B-3236.pdf"
-                    },
-                    {
-                        title: "Trait Association Studies for Yield Components in Tomato (Solanum lycopersicum L.)",
-                        authors: "B. Thapa, A.K. Pandey, V.K. Agrawal, N. Kumar, S.K. Mahto",
-                        journal: "International Journal of Agriculture Sciences. 8(1): 934-937",
-                        year: "2015",
-                        url: "http://www.bioinfopublication.org/viewhtml.php?artid=BIA0002639"
-                    },
-                    {
-                        title: "Inheritance of kernel quality attributes in quality protein maize (Zea mays L.)",
-                        authors: "V.K. Agrawal, R.M. Singh, J.P. Shahi, R.K. Agrawal, D.P. Chaudhary",
-                        journal: "Indian Journal of Genetics and Plant Breeding. 75(2): 201-207",
-                        year: "2015",
-                        url: "https://doi.org/10.5958/0975-6906.2015.00031.0"
-                    },
-                    {
-                        title: "Genetics of ear traits and grain yield in quality protein maize (Zea mays L.)",
-                        authors: "V.K. Agrawal, R.M. Singh, J.P. Shahi, R.K. Agrawal",
-                        journal: "Electronic Journal of Plant Breeding, 5(3): 428-434",
-                        year: "2014",
-                        url: "https://www.ejplantbreeding.org/index.php/EJPB/article/view/34"
-                    },
-                    {
-                        title: "Correlation and path analysis in certain inbred genotypes of maize (Zea mays L.) at Varanasi",
-                        authors: "V. Natraj, J.P. Shahi, V.K. Agrawal",
-                        journal: "International Journal of Innovative Research and Development. 3(1): 14-17",
-                        year: "2014",
-                        url: "https://internationaljournalcorner.com/index.php/ijird_ojs/article/view/134378/93502"
-                    },
-                    {
-                        title: "Heritable and non-heritable components of phenotypic correlation coefficient and path analysis in tomato (Solanum lycopersicum L.)",
-                        authors: "Mukul, V.K. Agrawal, K. Srivastava, R.K. Agrawal",
-                        journal: "The Bioscan. 9(4): 1789-1793",
-                        year: "2014",
-                        url: "https://thebioscan.com/index.php/pub/article/view/2139"
-                    },
-                    {
-                        title: "Estimation of genetic divergence among indigenous and exotic accessions of tomato (Solanum lycopersicum L.)",
-                        authors: "Mukul, K. Srivastava, V.K. Agrawal, R.K. Agrawal",
-                        journal: "Asian Journal of Bio Science. 9: 30-34",
-                        year: "2014",
-                        url: "http://www.researchjournal.co.in/upload/assignments/9_30-34.pdf"
-                    },
-                    {
-                        title: "Appraisal of genetic variability and seasonal interaction for yield and quality traits in maize (Zea mays L.)",
-                        authors: "D.M. Langade, J.P. Shahi, K. Srivastava, A. Singh, V.K. Agrawal, A. Sharma",
-                        journal: "Plant, Gene and Trait. 4(18): 95-103",
-                        year: "2013",
-                        url: "https://genbreedpublisher.com/index.php/pgt/article/view/956"
-                    },
-                    {
-                        title: "Maize as an emerging source of oil in India - An overview",
-                        authors: "D.M. Langade, J.P. Shahi, V.K. Agrawal, A. Sharma",
-                        journal: "Maydica, 58: 224-230",
-                        year: "2013",
-                        url: "https://core.ac.uk/download/pdf/230662278.pdf"
-                    },
-                    {
-                        title: "Doubled haploid in Maize Breeding: Analysis of Prospects and Constraints in Indian Context",
-                        authors: "J.P. Shahi, V.K. Agrawal, R.M. Singh",
-                        journal: "Book of Extended Summaries of the Eleventh Asian Maize Conference, Nanning, China, 7-11 November 2011. CIMMYT, Mexico, D.F., 198-200",
-                        year: "2011",
-                        url: "https://repository.cimmyt.org/entities/publication/17b4dc94-dfbf-495d-8507-868d9e9693b5"
-                    }
-                ];
-                
-                publications.forEach((pub, index) => {
-                    htmlContent += `
-                        <div class="publication-item">
-                            <h4>${index + 1}. ${pub.title}</h4>
-                            <div class="authors">${pub.authors}</div>
-                            <div class="journal">${pub.journal} (${pub.year})</div>
-                            <div class="url"><a href="${pub.url}" target="_blank">View Publication</a></div>
-                        </div>
-                    `;
-                });
-                
-                // Add theses section
-                htmlContent += `
-                    <div class="thesis-section">
-                        <h3>Research Theses</h3>
-                        <div class="publication-item">
-                            <h4>PhD Thesis (2014)</h4>
-                            <div class="authors">Vishal Kumar Agrawal</div>
-                            <div class="journal">Banaras Hindu University, Varanasi, India</div>
-                            <div class="abstract"><strong>Title:</strong> Genetics of Yield and Quality Traits in Quality Protein Maize (Zea mays L.)</div>
-                        </div>
-                        <div class="publication-item">
-                            <h4>MSc Thesis (2008)</h4>
-                            <div class="authors">Vishal Kumar Agrawal</div>
-                            <div class="journal">Banaras Hindu University, Varanasi, India</div>
-                            <div class="abstract"><strong>Title:</strong> Studies on genetic variability, interrelationships and D-square analysis in French bean (Phaseolus vulgaris L.)</div>
-                        </div>
-                    </div>
-                `;
-                
-                document.getElementById('publications-content').innerHTML = htmlContent;
-            } catch (error) {
-                console.error('Error loading publications:', error);
-                document.getElementById('publications-content').innerHTML = 
-                    `<p style="color: red;">Error loading publications. Please ensure publications_VishalAgrawal.txt is in the same directory.</p>`;
+// Function to load and format publications
+async function loadPublications() {
+    try {
+        const response = await fetch('publications_VishalAgrawal.txt');
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const text = await response.text();
+        
+        let htmlContent = `<p class="intro-text">My research contributions span diverse aspects of plant breeding, genetics, and crop improvement, with 11 publications in peer-reviewed international journals, technical bulletins, and conference proceedings. My published work primarily focuses on genetic analysis, breeding methodologies, and crop improvement in maize and tomato.</p>`;
+        
+        htmlContent += '<h3>Peer-Reviewed Publications</h3>';
+        
+        // Split content into sections
+        const sections = text.split(/(?=\d+\.\s+Title:)/);
+        let publicationCount = 0;
+        
+        for (let section of sections) {
+            section = section.trim();
+            if (!section || !section.includes('Title:')) continue;
+            
+            publicationCount++;
+            const lines = section.split('\n');
+            let title = '', authors = '', journal = '', year = '', abstract = '', url = '';
+            
+            for (let line of lines) {
+                line = line.trim();
+                if (line.startsWith('Title:')) {
+                    title = line.replace('Title:', '').trim();
+                } else if (line.startsWith('Authors:')) {
+                    authors = line.replace('Authors:', '').trim();
+                } else if (line.startsWith('Journal/Publication:')) {
+                    journal = line.replace('Journal/Publication:', '').trim();
+                } else if (line.startsWith('Year:')) {
+                    year = line.replace('Year:', '').trim();
+                } else if (line.startsWith('Abstract/Summary:')) {
+                    abstract = line.replace('Abstract/Summary:', '').trim();
+                } else if (line.startsWith('URL:')) {
+                    url = line.replace('URL:', '').trim();
+                }
             }
+            
+            htmlContent += `
+                <div class="publication-item">
+                    <h4>${publicationCount}. ${title}</h4>
+                    <div class="authors"><strong>Authors:</strong> ${authors}</div>
+                    <div class="journal"><strong>Published in:</strong> ${journal} (${year})</div>
+                    ${abstract ? `<div class="abstract"><strong>Abstract:</strong> ${abstract}</div>` : ''}
+                    ${url ? `<div class="url"><a href="${url}" target="_blank">📄 View Publication</a></div>` : ''}
+                </div>
+            `;
         }
+        
+        // Add theses section
+        htmlContent += `
+            <div class="thesis-section">
+                <h3>Research Theses</h3>
+                <div class="publication-item">
+                    <h4>PhD Thesis (2014)</h4>
+                    <div class="authors"><strong>Author:</strong> Vishal Kumar Agrawal</div>
+                    <div class="journal"><strong>Institution:</strong> Banaras Hindu University, Varanasi, India</div>
+                    <div class="abstract"><strong>Title:</strong> Genetics of Yield and Quality Traits in Quality Protein Maize (Zea mays L.)</div>
+                    <div class="abstract">This PhD thesis aimed to investigate the nature of gene actions, estimate general combining ability (GCA) and specific combining ability (SCA) effects, determine standard heterosis, and identify superior cross combinations for yield and kernel quality traits in Quality Protein Maize (QPM). The research involved eight diverse QPM inbred lines crossed in a diallel mating design, generating 56 crosses evaluated over three seasons.</div>
+                </div>
+                <div class="publication-item">
+                    <h4>MSc Thesis (2008)</h4>
+                    <div class="authors"><strong>Author:</strong> Vishal Kumar Agrawal</div>
+                    <div class="journal"><strong>Institution:</strong> Banaras Hindu University, Varanasi, India</div>
+                    <div class="abstract"><strong>Title:</strong> Studies on genetic variability, interrelationships and D-square analysis in French bean (Phaseolus vulgaris L.)</div>
+                    <div class="abstract">This Master's thesis aimed to assess genetic variability, estimate heritability and genetic advance, determine trait associations, and perform path analysis and genetic divergence using Mahalanobis's D² statistic in 47 diverse genotypes of French bean.</div>
+                </div>
+            </div>
+        `;
+        
+        document.getElementById('publications-content').innerHTML = htmlContent;
+    } catch (error) {
+        console.error('Error loading publications:', error);
+        document.getElementById('publications-content').innerHTML = 
+            `<p style="color: red;">Error loading publications. Please ensure publications_VishalAgrawal.txt is in the same directory.</p>`;
+    }
+}
+
 
         // Function to load and format contact content
         async function loadContactContent() {
