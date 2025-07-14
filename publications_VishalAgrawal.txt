@@ -6,77 +6,77 @@ My research contributions span diverse aspects of plant breeding, genetics, and 
 
 PEER-REVIEWED PUBLICATIONS:
 
-Title: Grafting technology to alleviate waterlogging stress in tomato. Technical Bulletin No. 88
+1. Title: Grafting technology to alleviate waterlogging stress in tomato. Technical Bulletin No. 88
 Authors: Anant Bahadur, P.M. Singh, Nagendra Rai, Major Singh, Achuit Kumar Singh, S.G. Karkute, Amit Kumar Singh, K.K. Jangid, Anish Kumar Singh, Sanchika Snehi, Mohd. A. Nadeem, P.K. Patel, V.K. Agrawal, Jagdish Singh
 Journal/Publication: ICAR-Indian Institute of Vegetable Research, Varanasi, pp. 1-40
 Year: 2019
 Abstract/Summary: This technical bulletin discusses the application of grafting technology in tomato to mitigate waterlogging stress, a significant challenge exacerbated by climate change and erratic rainfall patterns. Tomato is highly susceptible to waterlogging, which causes oxygen deficiency, impairs root respiration, and reduces plant growth and fruit yield. The research, conducted under the National Innovations in Climate Resilient Agriculture (NICRA) project, aimed to develop and demonstrate this technology.
 URL: https://iivr.icar.gov.in/
 
-Title: Elucidation of variability, interrelationships and path-coefficient in maize (Zea mays L.)
+2. Title: Elucidation of variability, interrelationships and path-coefficient in maize (Zea mays L.)
 Authors: A. Chaudhary, K. Srivastava, V.K. Agrawal, S. Kumar
 Journal/Publication: Nature Environment and Pollution Technology. 15(2): 653-656
 Year: 2016
 Abstract/Summary: In order to study the genetic variability, heritability with genetic advance and character association along with the partitioning of the association into direct and indirect effects in 40 inbreds, an experiment was conducted at the Agricultural Research Farm of Institute of Agricultural Sciences, Banaras Hindu University, Varanasi (U.P.), India during rabi season of 2011-12. Almost all the characters under study showed highly significant variation. Higher values of genotypic and phenotypic coefficients of variation were observed for the characters like grain yield per plant, number of kernels per row and ear height. Among the characters under study, yield per plant, ear height, number of kernels per row and 100-grain weight showed high heritability coupled with high genetic advance suggesting their importance for direct selection. Correlation studies revealed that number of kernels per row followed by cob diameter, ear height and number of kernel rows per cob exhibited significant positive association with grain yield per plant. Days to 50% tasseling and days to 50% silking showed a negative association with yield. Highest direct positive effect on yield per plant was observed for number of kernels per row followed by a number of kernel rows per cob.
 URL: https://neptjournal.com/upload-images/NL-56-44-(44)B-3236.pdf
 
-Title: Trait Association Studies for Yield Components in Tomato (Solanum lycopersicum L.)
+3. Title: Trait Association Studies for Yield Components in Tomato (Solanum lycopersicum L.)
 Authors: B. Thapa, A.K. Pandey, V.K. Agrawal, N. Kumar, S.K. Mahto
 Journal/Publication: International Journal of Agriculture Sciences. 8(1): 934-937
 Year: 2015
 Abstract/Summary: Correlations and path coefficient were studied in 38 tomato (Solanum lycopersicum L.) genotypes for thirteen yield-contributing characters. The correlation coefficients were determined to find out the inter relationship among the characters studied. Yield plant-1 was found highly significant and positively with average fruit weight, fruits plant-1, locule number fruit-1, pericarp thickness, fruits cluster-1 and number of clusters plant-1. Strong association of these traits revealed that the selection based on these traits would ultimately improve the fruit yield. In order to obtain a clear picture of the inter relationship between yield plant-1 and its components, direct and indirect effects were measured using path coefficient analysis. Analysis revealed that a highest positive direct effect on fruit yield plant-1 was exhibited by average fruit weight followed by fruits plant-1, clusters plant-1, fruits cluster-1 and pericarp thickness. It would be rewarding to lay stress on traits like average fruit weight and fruits plant-1 in selection programmes for increasing the yield because they showed positive and significant association with fruit yield plant-1 in both the analyses of correlation and path-coefficient. Residual effect was low which indicated that characters included in this study explained almost all variability towards yield.
 URL: http://www.bioinfopublication.org/viewhtml.php?artid=BIA0002639
 
-Title: Inheritance of kernel quality attributes in quality protein maize (Zea mays L.)
+4. Title: Inheritance of kernel quality attributes in quality protein maize (Zea mays L.)
 Authors: V.K. Agrawal, R.M. Singh, J.P. Shahi, R.K. Agrawal, D.P. Chaudhary
 Journal/Publication: Indian Journal of Genetics and Plant Breeding. 75(2): 201-207
 Year: 2015
 Abstract/Summary: Nature and magnitude of gene actions were studied employing Hayman’s component analysis, with 8 quality protein maize (QPM) inbred lines and their 56 diallel set of crosses including reciprocals. Kernels of each entry were subjected to analysis of endosperm modification (EM), endosperm protein content (EPR) and tryptophan content (TRP). Significant difference was observed among genotypes for the three traits. EM and TRP content exhibited importance of both additive and dominance components, whereas EPR exhibited prevalence of dominance gene effects. Average degree of dominance revealed partial to complete dominance for EM, whereas complete to over-dominance was exhibited by TRP, over the seasons. EPR consistently showed over-dominance. The quality traits among QPM lines were observed to be controlled by 1-3 dominant genes/gene blocks. Heritability estimates ranged from 55-75.5% for EM, 32.2-51% for EPR and 35.3-60.6% for TRP over three seasons.
 URL: https://doi.org/10.5958/0975-6906.2015.00031.0
 
-Title: Genetics of ear traits and grain yield in quality protein maize (Zea mays L.)
+5. Title: Genetics of ear traits and grain yield in quality protein maize (Zea mays L.)
 Authors: V.K. Agrawal, R.M. Singh, J.P. Shahi, R.K. Agrawal
 Journal/Publication: Electronic Journal of Plant Breeding, 5(3): 428-434
 Year: 2014
 Abstract/Summary: Hayman’s component analysis was employed to ascertain the gene actions conditioning the ear related traits viz., ear length, ear diameter, kernel rows per ear, kernels per row and grain yield per plant in quality protein maize. Eight yellow seeded quality protein maize (QPM) inbred lines were crossed in diallel mating design, including reciprocals. The inbreds and their 56 crosses were evaluated in randomized block design with 3 replications across the three environments. Significant differences among genotypes observed for all the traits over the environments. Influence of epistasis found for all the traits in one or more seasons except ear length. Ear length exhibited importance of additive gene effects across the seasons. Over-dominance showed in all the characters. The range of narrow sense heritability was low over the environments for most of the traits i.e. for ear length (15.1-19.3%), ear diameter (12.1-17.7%), kernels per row (23.6-30.5%) and grain yield per plant (13.6-19.5%) whereas kernel rows per ear exhibited moderate narrow sense heritability ranging from 44.3-66.5% over the environments. In general, narrow sense heritability estimates were higher in rabi environment as compared to kharif environment.
 URL: https://www.ejplantbreeding.org/index.php/EJPB/article/view/34
 
-Title: Correlation and path analysis in certain inbred genotypes of maize (Zea mays L.) at Varanasi
+6. Title: Correlation and path analysis in certain inbred genotypes of maize (Zea mays L.) at Varanasi
 Authors: V. Natraj, J.P. Shahi, V.K. Agrawal
 Journal/Publication: International Journal of Innovative Research and Development. 3(1): 14-17
 Year: 2014
 Abstract/Summary: The phenotype as well as genotype correlation and path analysis of agronomic yield and yield contributing characters were analysed in 39 inbreds of maize (Zea mays L.). Grain yield has positive and significant correlation with ear diameter, number of kernels per row, number of kernel rows per ear, ear height, ear weight with husk, ear weight without husk, plant height, 100 grain weight and ear length both at genotypic and phenotypic levels. Path analysis revealed that that ear weight with husk, number of kernel rows per ear, number of kernels per row and 100 grain weight showed highest direct effect on grain yield per plant. The direct effects of plant height, ear height and ear diameter were also considerable. Whereas the remaining characters exhibited negative direct effect on grain yield per plant.
 URL: https://internationaljournalcorner.com/index.php/ijird_ojs/article/view/134378/93502
 
-Title: Heritable and non-heritable components of phenotypic correlation coefficient and path analysis in tomato (Solanum lycopersicum L.)
+7. Title: Heritable and non-heritable components of phenotypic correlation coefficient and path analysis in tomato (Solanum lycopersicum L.)
 Authors: Mukul, V.K. Agrawal, K. Srivastava, R.K. Agrawal
 Journal/Publication: The Bioscan. 9(4): 1789-1793
 Year: 2014
 Abstract/Summary: An investigation was carried out to study character associations among 16 yield traits including yield on 30 genotype of tomato (15 exotic and 15 indigenous). Genotypic coefficient of variation played a major role for the expression of the traits and ranged from 9.35 (days to 50% flowering) to 42.02 (fruit yield per plant). Heritability in broad sense ranged from 66.00 (primary branches) to 90.10 (fruit per plant). High genetic advance was observed for Fruit yield per plant (81.95) coupled with high heritability (89.60). The contributions through heritable and non heritable components to the magnitude phenotypic correlation coefficient were examined and it was found that in most of the cases heritable components contributed maximum towards the magnitude of phenotypic correlation coefficient however, in few cases environment factors seem to play a major role to bring down the magnitude of phenotypic correlation coefficient compared to its genotypic contributions. Average fruit weight (0.74), fruits per plant (0.55), equatorial diameter (0.43) fruits per cluster (0.42), locule number (0.39) and cluster per plant (0.36), polar diameter (0.36) and flowers per cluster (0.18) were positively associated with fruit yield at phenotypic level, indicating improvement in these traits will increase the fruit yield. Path-coefficient analysis revealed that Average fruit weight (0.61) followed by fruits per plant (0.36), polar diameter (0.18), cluster per plant (0.15)and fruits per cluster (0.13) had highest positive direct effect on fruit yield. Locule number (0.376), equatorial number(0.367) and polar diameter (0.243) had highest positive indirect effect through average fruit weight on fruit yield.
 URL: https://thebioscan.com/index.php/pub/article/view/2139
 
-Title: Estimation of genetic divergence among indigenous and exotic accessions of tomato (Solanum lycopersicum L.)
+8. Title: Estimation of genetic divergence among indigenous and exotic accessions of tomato (Solanum lycopersicum L.)
 Authors: Mukul, K. Srivastava, V.K. Agrawal, R.K. Agrawal
 Journal/Publication: Asian Journal of Bio Science. 9: 30-34
 Year: 2014 
 Abstract/Summary: Thirty genotypes of tomato, both indigenous and exotic were tested for the presence of diversity on the basis eighteen yield and quality traits. Mahalanobis’s D-square analysis was employed to estimate the distances between and within the clusters formed from the test genotypes. Ten clusters were formed using Tocher’s method. Cluster I, III and X were having 16, 3 and 2 genotypes, respectively, rest of the seven clusters were solitary and having single genotype each. The highest inter-cluster distance was found between clusters IV and X whereas lowest distance was observed between cluster VI and VIII suggested a closer relationship between these clusters and low degree of diversity among the genotypes. The maximum contribution towards divergence was accounted by plant height, seed index and yield per plant (~15% each) followed by fruits per plant, juice-pulp ratio, pericarp thickness and flowers per cluster. Results also revealed that there was no association between clustering pattern and eco-geographical distribution of genotypes. On the basis of the divergence study the genotypes could be selected from the most divergent clusters for hybridization and further selection programme.
 URL: http://www.researchjournal.co.in/upload/assignments/9_30-34.pdf
 
-Title: Appraisal of genetic variability and seasonal interaction for yield and quality traits in maize (Zea mays L.)
+9. Title: Appraisal of genetic variability and seasonal interaction for yield and quality traits in maize (Zea mays L.)
 Authors: D.M. Langade, J.P. Shahi, K. Srivastava, A. Singh, V.K. Agrawal, A. Sharma
 Journal/Publication: Plant, Gene and Trait. 4(18): 95-103; doi: 10.5376/pgt.2013.04.0018
 Year: 2013
 Abstract/Summary: Knowledge of the genetic components of variances and inter-relationships between yield and its quality traits will improve the efficiency of breeding programmes through the use of appropriate selection indices, taking into consideration for ten inbreds of maize obtained from All India Co-ordinated Maize Improvement Project. Ten inbreds were evaluated in a Randomized Block Design with three replications. Highest PCV and GCV were observed for oil content preceded by days to 50% tasseling and days to 50% silking. High heritability were observed for days to 50% tasseling, days to 50% silking, protein content, starch content and number of kernels row-1. High heritability with high genetic advance were observed for days to 50% tasseling and days to 50% silking which indicated that most likely the heritability was due to the influence of additive genes and selection may be effective for such traits. Highest significant and positive correlation were found between days to 50% tasseling and days to 50% silking followed by association of ear height and plant height; number of kernels row-1 and ear length; ear diameter and ear length. Significant and negative association were found between ear height and days to 50% tasseling; ear height and days to 50% silking; starch content and oil content. Oil content was recorded maximum positive direct effect on yield. Direct effect of ear length, ear diameter, 100 kernel weight, oil content and starch content on yield was positive and high.
 URL: https://genbreedpublisher.com/index.php/pgt/article/view/956
 
-Title: Maize as an emerging source of oil in India - An overview
+10. Title: Maize as an emerging source of oil in India - An overview
 Authors: D.M. Langade, J.P. Shahi, V.K. Agrawal, A. Sharma
 Journal/Publication: Maydica, 58: 224-230
 Year: 2013
 Abstract/Summary: India is the largest importer as well as the third largest consumer of edible oils. Over many decades maize has been meeting the requirements of human population for food, fodder, fuel and other innumerable number of industrial products such as oil, protein, starch, ethanol, etc. Due to ever-growing and increasing human population and its demands, the necessities and demands of oil is increasing at an alarming rate. In India, maize oil is used to blend with other oils, because of vast nutritional quality embedded in it such as vitamin E (tocopherol), sitosterol and linoleic acid which are indispensable essential fatty acids. Hence, there is a wider scope to emphasize research on maize hybrids that are not only rich in oil content but also having an array of beneficial nutrients. Maize has the highest productivity as compared to other crops. Therefore, the target of attaining self-sufficiency in oil can be ful-filled through this crop. To achieve this goal, the breeders have to develop best inbreds by various methods such as divergent recurrent selection or other such, which are being successfully conducted in the University of Illinois.
 URL: https://core.ac.uk/download/pdf/230662278.pdf
 
-Title: Doubled haploid in Maize Breeding: Analysis of Prospects and Constraints in Indian Context
+11. Title: Doubled haploid in Maize Breeding: Analysis of Prospects and Constraints in Indian Context
 Authors: J.P. Shahi, V.K. Agrawal, R.M. Singh
 Journal/Publication: Book of Extended Summaries of the Eleventh Asian Maize Conference, Nanning, China, 7-11 November 2011. CIMMYT, Mexico, D.F., 198-200
 Year: 2011
