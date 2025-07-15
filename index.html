@@ -668,20 +668,21 @@ async function loadPublications() {
 
 
 //✅Fixed thesis parsing section✅
+// Fixed thesis parsing section that handles Windows line breaks
 const thesesMatch = text.match(/RESEARCH THESES:\s*([\s\S]*?)$/);
 if (thesesMatch) {
     const thesesText = thesesMatch[1].trim();
     htmlContent += '<div class="thesis-section"><h3>Research Theses</h3>';
 
-    // Split by thesis entries (handles both \n and \r\n)
+    // Split by thesis entries
     const sections = thesesText.split(/\r?\n(?=\w+\s+Thesis)/);
     
     sections.forEach(section => {
         section = section.trim();
         if (!section) return;
         
-        // Extract thesis type and year from first line
-        const firstLineMatch = section.match(/^(\w+)\s+Thesis\s*$(\d{4})$/);
+        // Extract thesis type and year - now handles line break after year
+        const firstLineMatch = section.match(/^(\w+)\s+Thesis\s*$(\d{4})$/m);
         if (!firstLineMatch) return;
         
         const thesisType = firstLineMatch[1];
@@ -709,7 +710,6 @@ if (thesesMatch) {
     
     htmlContent += '</div>';
 }
-
         document.getElementById('publications-content').innerHTML = htmlContent;
 
     } catch (error) {
