@@ -668,7 +668,7 @@ async function loadPublications() {
 
 
 //✅Fixed thesis parsing section✅
-// Fixed thesis parsing section that handles Windows line breaks
+// Working solution using manual extraction (since that's proven to work)
 const thesesMatch = text.match(/RESEARCH THESES:\s*([\s\S]*?)$/);
 if (thesesMatch) {
     const thesesText = thesesMatch[1].trim();
@@ -681,14 +681,20 @@ if (thesesMatch) {
         section = section.trim();
         if (!section) return;
         
-        // Extract thesis type and year - now handles line break after year
-        const firstLineMatch = section.match(/^(\w+)\s+Thesis\s*$(\d{4})$/m);
-        if (!firstLineMatch) return;
+        // Get first line
+        const firstLine = section.split(/\r?\n/)[0];
         
-        const thesisType = firstLineMatch[1];
-        const year = firstLineMatch[2];
+        // Manual extraction (proven to work from debug)
+        const typeEnd = firstLine.indexOf(' Thesis');
+        const yearStart = firstLine.indexOf('(');
+        const yearEnd = firstLine.indexOf(')');
         
-        // Extract fields (handles \r\n line breaks)
+        if (typeEnd === -1 || yearStart === -1 || yearEnd === -1) return;
+        
+        const thesisType = firstLine.substring(0, typeEnd);
+        const year = firstLine.substring(yearStart + 1, yearEnd);
+        
+        // Extract fields from the rest of the section
         const titleMatch = section.match(/Title:\s*([^\r\n]+)/);
         const authorMatch = section.match(/Author:\s*([^\r\n]+)/);
         const institutionMatch = section.match(/Institution:\s*([^\r\n]+)/);
