@@ -20,7 +20,7 @@ function addPageCounter() {
              alt="Visitors"
              style="margin-top: 10px;">
         <p style="margin-top: 10px; color: #666; font-size: 14px;">
-            Thank you for visiting
+            Thanks for Visiting
         </p>
     `;
     
