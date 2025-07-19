@@ -20,7 +20,10 @@ function addPageCounter() {
              alt="Visitors"
              style="margin-top: 10px;">
         <p style="margin-top: 10px; color: #666; font-size: 14px;">
-            Thanks for Visiting
+           <footer>
+    <p>"In the pursuit of knowledge, every day something is added" ~ Lao Tzu</p>
+    <p class="small-text">Curated by Vishal Agrawal</p>
+</footer>
         </p>
     `;
     
