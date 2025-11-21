@@ -39,8 +39,7 @@ Authors: V.K. Agrawal, R.M. Singh, J.P. Shahi, R.K. Agrawal
 Journal/Publication: Electronic Journal of Plant Breeding, 5(3): 428-434
 Year: 2014
 Abstract/Summary: Hayman’s component analysis was employed to ascertain the gene actions conditioning the ear related traits viz., ear length, ear diameter, kernel rows per ear, kernels per row and grain yield per plant in quality protein maize. Eight yellow seeded quality protein maize (QPM) inbred lines were crossed in diallel mating design, including reciprocals. The inbreds and their 56 crosses were evaluated in randomized block design with 3 replications across the three environments. Significant differences among genotypes observed for all the traits over the environments. Influence of epistasis found for all the traits in one or more seasons except ear length. Ear length exhibited importance of additive gene effects across the seasons. Over-dominance showed in all the characters. The range of narrow sense heritability was low over the environments for most of the traits i.e. for ear length (15.1-19.3%), ear diameter (12.1-17.7%), kernels per row (23.6-30.5%) and grain yield per plant (13.6-19.5%) whereas kernel rows per ear exhibited moderate narrow sense heritability ranging from 44.3-66.5% over the environments. In general, narrow sense heritability estimates were higher in rabi environment as compared to kharif environment.
-URL: https://www.cabidigitallibrary.org/doi/pdf/10.5555/20143359314
-
+URL: https://doaj.org/article/1cd3986f6c0e40ffb482ee62df5ab9b2
 6. Title: Correlation and path analysis in certain inbred genotypes of maize (Zea mays L.) at Varanasi
 Authors: V. Natraj, J.P. Shahi, V.K. Agrawal
 Journal/Publication: International Journal of Innovative Research and Development. 3(1): 14-17
@@ -102,4 +101,5 @@ Abstract: This Master of Science (Agriculture) thesis, titled "Studies on Geneti
 The study evaluated 47 diverse genotypes of rajmash (French bean) in a Randomized Block Design (RBD) with two replications during the rabi season of 2007-2008 at Banaras Hindu University, Varanasi. Data were collected on eight yield-related traits, including plant height, pods per plant, 100-seed weight, and seed yield per plant.
 Key findings indicated significant differences among genotypes for all traits studied. Plant height (99.7%) and 100-seed weight (95.0%) exhibited high heritability, suggesting effective selection. Seed yield positively correlated with primary branches, pods per plant, seeds per pod, and 100-seed weight. Path analysis revealed pods per plant had the highest direct effect on yield, followed by 100-seed weight and seeds per pod. The genotypes grouped into six clusters, with no association found between clustering pattern and eco-geographical distribution. Plant height, 100-seed weight, pod length, and days to maturity contributed most to overall divergence.
 In conclusion, the research highlighted that pods per plant, 100-seed weight, primary branches, and seeds per pod are crucial traits for yield improvement in French bean. HP-3B and HP-10 were identified as the most divergent strains, recommended as parents for future crossing programmes.
+
 
